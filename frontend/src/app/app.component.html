@@ -1,0 +1,10 @@
+
+<h1>
+  {{title}}
+</h1>
+<div class="row">
+  <div *ngFor="let name of effectNames">
+    <effect [data]=effects[name] (dataChange)="dataChanged($event, name)"></effect>
+  </div>
+
+</div>

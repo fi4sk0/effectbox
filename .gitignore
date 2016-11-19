@@ -1,0 +1,37 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+python/.vscode
+__pycache__
+
+# compiled output
+frontend/dist
+frontend/tmp
+
+# dependencies
+frontend/node_modules
+frontend/bower_components
+
+# IDEs and editors
+.idea
+.vscode
+.project
+.classpath
+*.launch
+.settings/
+
+# misc
+frontend/.sass-cache
+frontend/connect.lock
+frontend/coverage/*
+frontend/libpeerconnection.log
+frontend/genienpm-debug.log
+frontend/genietestem.log
+frontend/typings
+
+# e2e
+frontend/e2e/*.js
+frontend/e2e/*.map
+
+#System Files
+.DS_Store
+Thumbs.db

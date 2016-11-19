@@ -1,0 +1,20 @@
+<div>
+
+  <b>{{data?.name}}</b> {{data?.description}}
+  
+    <table>
+      <tr *ngFor="let item of parameterNames">   
+        <td align="right">{{item}}</td>
+        <td><input 
+          type="range" 
+          min="{{data.parameters[item].min}}"
+          max="{{data.parameters[item].max}}"
+          step="{{(data.parameters[item].max - data.parameters[item].min) / 100.0}}" 
+          name="{{item}}"
+          value="{{data.parameters[item].value}}" 
+          (input)="changed($event.srcElement.value, item)">
+          {{data.parameters[item].value}}
+        </td>
+      </tr>
+    </table>
+</div>

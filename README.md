@@ -8,10 +8,10 @@ In case you ever tried to create an effect for a LED-pixel based project that ac
 ```
 Code an algorithm -> run -> tweak -> run -> (tweak -> run)**inf 
 ```
-To be more efficient and getting a live view of what tweaking the parameters actually do, _effectbox_ might be able to help you. 
+To be more efficient and getting a live view of what tweaking the parameters actually does, _effectbox_ might be able to help you. 
 
 # Sample
-```
+```python
 # Create an OPC client
 client = opc.Client("rpi3:7890", verbose=False, long_connection=True)
 
@@ -54,4 +54,5 @@ my_box.add_effect(SingleColor(), "single_color")
 my_box.start()
 ```
 A webapp included in this repository connects to the effect runner using WebSockets and creates a site representing the parameters of the effect:
+
 ![Webapp Photo](https://raw.github.com/fi4sk0/effectbox/master/doc/webapp-screen.png)
